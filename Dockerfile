@@ -9,4 +9,3 @@ RUN add-apt-repository ppa:fkrull/deadsnakes && \
     . /var/py33/bin/activate && python /tmp/get-pip.py --force-reinstall && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 COPY root/_bashrc /root/.bashrc
-VOLUME /var/py33
